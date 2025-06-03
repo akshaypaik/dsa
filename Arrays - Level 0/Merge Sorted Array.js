@@ -1,5 +1,6 @@
 const nums1 = [1, 2, 3, 0, 0, 0], m = 3, nums2 = [2, 5, 6], n = 3;
 
+// using extra space(extra variable)
 // const mergeSortedArrays = (nums1, nums2, m, n) => {
 
 //     if(n === 0){
@@ -29,6 +30,7 @@ const nums1 = [1, 2, 3, 0, 0, 0], m = 3, nums2 = [2, 5, 6], n = 3;
 
 // }
 
+// more optimised
 const mergeSortedArrays = (nums1, nums2, m, n) => {
 
     let p1 = m - 1;
