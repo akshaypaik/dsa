@@ -1,0 +1,12 @@
+Recursion ->
+
+Function calls itself to solve smaller versions of the same problem.
+
+Two parts of Recursion:
+1. Base case - stop condition (when to stop calling itself)
+2. Recursive case -  part where function calls itself
+
+Real Life Exmaples:
+1. Queue of people
+2. Comment threads
+3. Organisational hierarchies
