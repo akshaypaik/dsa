@@ -1,0 +1,21 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "dsa for noobs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run:local": "live-server --port=8080 --entry-file='./index.html'"
+  },
+  "keywords": [
+    "dsa",
+    "akshay",
+    "pai"
+  ],
+  "author": "akshay pai",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  }
+}
