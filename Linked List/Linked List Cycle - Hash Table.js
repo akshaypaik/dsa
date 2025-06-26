@@ -7,10 +7,6 @@ const hasCycle = function (head) {
     let curr = head;
     let elmSet = new Set();
 
-    if (size === 1) {
-        return false;
-    }
-
     while (curr) {
         // do not check only the node value like elmSet.add(curr.val)
         if (elmSet.has(curr)) {
