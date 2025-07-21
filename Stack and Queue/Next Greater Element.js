@@ -66,20 +66,16 @@ var nextGreaterElement = function (a1, arr) {
 
     for (let i = n - 2; i >= 0; i--) {
         let top = stack[stack.length - 1];
-        if (arr[i] < top) {
-            lookupMap.set(arr[i], top);
-        } else {
-            while (stack.length) {
-                if (stack[stack.length - 1] < arr[i]) {
-                    stack.pop();
-                } else {
-                    lookupMap.set(arr[i], stack[stack.length - 1]);
-                    break;
-                }
+        while (stack.length) {
+            if (stack[stack.length - 1] < arr[i]) {
+                stack.pop();
+            } else {
+                lookupMap.set(arr[i], stack[stack.length - 1]);
+                break;
             }
-            if (!stack.length) {
-                lookupMap.set(arr[i], -1);
-            }
+        }
+        if (!stack.length) {
+            lookupMap.set(arr[i], -1);
         }
         stack.push(arr[i]);
     }
