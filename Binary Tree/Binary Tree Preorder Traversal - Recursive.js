@@ -16,6 +16,7 @@ var preorderTraversal = function (root) {
 
     let ans = [];
 
+    // root => left => right 
     function traverse(curr){
         if(!curr) return;
         ans.push(curr.val);
