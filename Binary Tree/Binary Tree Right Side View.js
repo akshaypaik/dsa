@@ -29,3 +29,21 @@ var rightSideView = function (root) {
     }
     return ans;
 };
+
+// OR
+
+var rightSideView = function(root) {
+    if(!root) return [];
+    let queue = [root];
+    let ans = [];
+    while(queue.length){
+        let levelSize = queue.length;
+        for(let i=0; i < levelSize; i++){
+            let curr = queue.shift();
+            i == 0 && ans.push(curr?.val);
+            curr?.right && queue.push(curr?.right);
+            curr?.left && queue.push(curr?.left);
+        }
+    }
+    return ans;
+};
